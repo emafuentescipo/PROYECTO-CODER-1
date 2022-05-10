@@ -137,8 +137,8 @@ footer {
     text-align: center;
 }
 .grid__imagen {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     object-fit: cover;
 }
 .grid__hijo1 {
@@ -165,11 +165,6 @@ footer {
     grid-area: Elem6;
     background-color: brown;
 }
-.grid__imagen {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    }
 .grid__texto {
     position: absolute;
    bottom: 0;
