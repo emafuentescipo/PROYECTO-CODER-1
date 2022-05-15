@@ -218,6 +218,20 @@ footer {
     .whatzap {
         display: none;
     }
+    .grid {
+        border: none;
+        margin: auto;
+        padding: 10%;
+        min-height: 5px;
+        display: grid;
+        grid-column: span 80%;
+        grid-row: span 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    .p {
+        font-size: small;
+        margin: auto;
+    }
 }
 @media screen and (max-width: 600px) {
     .whatzap {
@@ -228,12 +242,27 @@ footer {
     }
     .centrado {
         font-size: 30px;
+        object-fit: contain;
     }
     .fondo {
-        height: 100vh;
+        min-height: 5px;
     }
     .footer {
         flex-direction: column;
-        gap: 20px;
+        gap: 5px;
+    }
+    .grid {
+        border: none;
+        margin: auto;
+        padding: 10%;
+        min-height: 5px;
+        display: grid;
+        grid-template-columns: 33%;
+        grid-template-rows: 1fr 1fr 1fr;
+       
+    }
+    .p {
+        font-size: small;
+        
     }
 }
