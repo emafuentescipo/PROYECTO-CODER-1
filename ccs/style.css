@@ -88,6 +88,8 @@ footer {
 .centrado {
     text-align: center;
     font-size: 1rem;
+        
+    
 }
 .fondo {
     background-color: black;
@@ -138,8 +140,8 @@ footer {
     text-align: center;
 }
 .grid__imagen {
-    height: 300px;
-    width: 300px;
+    height: 196px;
+    width: 100%;
     object-fit: cover;
 }
 .grid__hijo1 {
@@ -157,14 +159,20 @@ footer {
 .grid__hijo4 {
     grid-area: Elem4;
     background-color: maroon;
+    height: 14rem;
+   
 }
 .grid__hijo5 {
     grid-area: Elem5;
     background-color: blueviolet;
+    height: 14rem;
+    
 }
 .grid__hijo6 {
     grid-area: Elem6;
     background-color: brown;
+    height: 14rem;
+    
 }
 .grid__texto {
     position: absolute;
@@ -199,6 +207,7 @@ footer {
     animation-duration: 2s;
     animation-iteration-count: 3;
     animation-delay: 3s;
+    width: 90%;
 }
 
 @keyframes coder {
@@ -244,6 +253,7 @@ footer {
     .centrado {
         font-size: 30px;
         object-fit: contain;
+        
     }
     .fondo {
         min-height: 5px;
