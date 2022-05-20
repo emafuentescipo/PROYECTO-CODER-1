@@ -134,9 +134,9 @@ footer {
     width: 100%;
    }
 .grid__hijo {
-    border: 2px solid blue; 
-    padding: 1rem;
-    color: beige;
+    /* border: 2px solid blue;  */
+    /* padding: 1rem; */
+    /* color: beige; */
     text-align: center;
 }
 .grid__imagen {
@@ -146,29 +146,59 @@ footer {
 }
 .grid__hijo1 {
     grid-area: Elem1;
-    background-color: yellow;
+    /* background-color: yellow; */
+    background-image: url(../imagenes/20211003_143709.jpg);
+    /* background: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .grid__hijo2 {
+    background-image: url(../imagenes/20211003_143913.jpg);
+    /* background: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: Elem2;
     background-color: aqua;
 }
 .grid__hijo3 {
+    background-image: url(../imagenes/20211203_211039.jpg);
+    /* background: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: Elem3;
     background-color: red;
 }
 .grid__hijo4 {
+    background-image: url(../imagenes/20220411_185549.jpg);
+    /* background: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: Elem4;
     background-color: maroon;
-    height: 14rem;
-   
+    /* height: 14rem; */
+    
 }
 .grid__hijo5 {
+    background-image: url(../imagenes/20220415_145804.jpg);
+    /* background: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: Elem5;
     background-color: blueviolet;
     height: 14rem;
     
 }
 .grid__hijo6 {
+    background-image: url(../imagenes/20220415_145804.jpg);
+    /* background: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: Elem6;
     background-color: brown;
     height: 14rem;
@@ -182,8 +212,12 @@ footer {
    padding: 0,5rem 1rem;
 }
 .unborde {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border-radius: 25px;
+}
+form {
+    color: white;
+    padding: 50px 0;
 }
 .header1 {
     display: block;
@@ -235,7 +269,7 @@ footer {
         min-height: 5px;
         display: grid;
         grid-column: span 80%;
-        grid-row: span 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
         gap: 5px;
     }
     .p {
@@ -268,12 +302,17 @@ footer {
         padding: 10%;
         min-height: 5px;
         display: grid;
-        grid-template-columns: 33%;
+        grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr 1fr;
        
     }
     .p {
-        font-size: small;
-        
+        /* font-size: small; */
+        /* font-weight: 300;         */
     }
+}
+
+.test {
+    background-color: red;
+
 }
