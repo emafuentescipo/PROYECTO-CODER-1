@@ -306,10 +306,7 @@ form {
         grid-template-rows: 1fr 1fr 1fr;
        
     }
-    .p {
-        /* font-size: small; */
-        /* font-weight: 300;         */
-    }
+   
 }
 
 .test {

@@ -1,0 +1,31 @@
+@media screen and (max-width: 600px) {
+    .whatzap {
+        display: inline-block;
+    }
+    .flex {
+        display: none;
+    }
+    .centrado {
+        font-size: 30px;
+        object-fit: contain;
+        
+    }
+    .fondo {
+        min-height: 5px;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .grid {
+        border: none;
+        margin: auto;
+        padding: 10%;
+        min-height: 5px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+       
+    }
+   
+}
