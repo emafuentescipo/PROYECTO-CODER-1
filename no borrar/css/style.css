@@ -79,12 +79,12 @@ footer {
     color: beige;
     text-decoration: none;
     padding: 0,5rem 1rem;
+    display: inline-block;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
 
 }
-
 .centrado {
     text-align: center;
     font-size: 1rem;

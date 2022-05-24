@@ -1,83 +1,83 @@
-$vista: mobile;
-$color: red;
+// $vista: mobile;
+// $color: red;
 
-@if vista == emma {
-    $color: navy;
-} @else if $vista == mobile {
-    $color: orange;
-} 
-.sass-2 {
-    color: $color;
-}
+// @if vista == emma {
+//     $color: navy;
+// } @else if $vista == mobile {
+//     $color: orange;
+// } 
+// .sass-2 {
+//     color: $color;
+// }
 
-@for $i from 1 through 4 {
-    .col-#{$i}{
-    width: 10% * $i;
-    }
-}
+// @for $i from 1 through 4 {
+//     .col-#{$i}{
+//     width: 10% * $i;
+//     }
+// }
 
-@each $color in blue, yellow, black {
-    .#{color}{
-        background-color: #{color};
-    }
-}
+// @each $color in blue, yellow, black {
+//     .#{color}{
+//         background-color: #{color};
+//     }
+// }
 
-$redes: (
-    twitter: orange,
-    facebook: blue,
-    instagram: violet,
-    whatsapp: green,
-);
-@each $clave, $valor in $redes {
-    .btn-#{$clave} {
-        background-color: $valor;
-    }
-}
+// $redes: (
+//     twitter: orange,
+//     facebook: blue,
+//     instagram: violet,
+//     whatsapp: green,
+// );
+// @each $clave, $valor in $redes {
+//     .btn-#{$clave} {
+//         background-color: $valor;
+//     }
+// }
 
-.boton1 {
-    width: 200px;
-    height: 50px;
-    background-color: white;
-    text-align: center;
-    color: black;
-    border-radius: 20px;
-    border: 1px solid black;
+// .boton1 {
+//     width: 200px;
+//     height: 50px;
+//     background-color: white;
+//     text-align: center;
+//     color: black;
+//     border-radius: 20px;
+//     border: 1px solid black;
 
-    &--aceptar {
-        @extend .boton1;
-        background-color: green;
-        color: yellow;
-    }
-    &--cancelar {
-        @extend .boton1;
-        background-color: red;
-        color: yellow;
-    }
+//     &--aceptar {
+//         @extend .boton1;
+//         background-color: green;
+//         color: yellow;
+//     }
+//     &--cancelar {
+//         @extend .boton1;
+//         background-color: red;
+//         color: yellow;
+//     }
    
-}
-@mixin sizes ($width, $height) {
-    height: $height;
-    width: $width;
-}
-.box-small {
-    @include sizes (100px, 100px)
-}
-.box-medium {
-    @include sizes (200px, 200px)
-}
-.box-big {
-    @include sizes (500px, 500px)
-}
+// }
+// @mixin sizes ($width, $height) {
+//     height: $height;
+//     width: $width;
+// }
+// .box-small {
+//     @include sizes (100px, 100px)
+// }
+// .box-medium {
+//     @include sizes (200px, 200px)
+// }
+// .box-big {
+//     @include sizes (500px, 500px)
+// }
 
-@mixin gererarflex($direction, $eje-principal, $eje-secundario: center) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $eje-principal;
-    align-items: $eje-secundario;
-}
-.premiun {
-    @include generarflex(colum, center, center)
-}
-.ayuda {
-    @include generarflex(row, flex-start, center)
-}
+// @mixin gererarflex($direction, $eje-principal, $eje-secundario: center) {
+//     display: flex;
+//     flex-direction: $direction;
+//     justify-content: $eje-principal;
+//     align-items: $eje-secundario;
+// }
+// .premiun {
+//     @include generarflex(colum, center, center)
+// }
+// .ayuda {
+//     @include generarflex(row, flex-start, center)
+// }

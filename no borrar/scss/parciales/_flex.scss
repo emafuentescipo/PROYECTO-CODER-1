@@ -1,0 +1,16 @@
+.flex {
+    padding: 1rem;
+   }
+.flex__hijo {
+    list-style: nome;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex__item {
+    margin-left: 16px;    
+}
+.flex__enlace {
+    color: white;
+    text-decoration: none;
+}
