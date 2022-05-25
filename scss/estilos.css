@@ -396,4 +396,16 @@ footer {
         grid-template-rows: 1fr 1fr 1fr;
   }
 }
+
+h2 {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
+
+p {
+  text-align: end;
+  color: green;
+  font-size: 30px;
+}
 /*# sourceMappingURL=estilos.css.map */

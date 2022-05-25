@@ -81,3 +81,16 @@
 // .ayuda {
 //     @include generarflex(row, flex-start, center)
 // }
+@mixin personalizartexto ($textalign, $font-size, $color: green) {
+    text-align: $textalign;
+    color: $color;
+    font-size: $font-size;    
+}
+h2 {
+    @include personalizartexto (center, 30px, red)
+
+}
+
+p {
+    @include personalizartexto (end, 30px)
+}
