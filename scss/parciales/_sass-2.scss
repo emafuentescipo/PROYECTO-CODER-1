@@ -81,7 +81,7 @@
 // .ayuda {
 //     @include generarflex(row, flex-start, center)
 // }
-@mixin personalizartexto ($textalign, $font-size, $color: green) {
+@mixin personalizartexto ($textalign, $font-size, $color: black) {
     text-align: $textalign;
     color: $color;
     font-size: $font-size;    

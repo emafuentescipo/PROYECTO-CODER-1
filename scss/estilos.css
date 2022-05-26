@@ -183,7 +183,7 @@ footer {
 }
 
 .unborde {
-  /* background-color: blueviolet; */
+  background-color: blueviolet;
   border-radius: 25px;
 }
 
@@ -405,7 +405,7 @@ h2 {
 
 p {
   text-align: end;
-  color: green;
+  color: black;
   font-size: 30px;
 }
 /*# sourceMappingURL=estilos.css.map */
