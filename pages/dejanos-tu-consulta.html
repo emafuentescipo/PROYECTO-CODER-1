@@ -8,19 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../scss/estilos.css">
 </head>
 
 <body class="fondo gradientes">
-    
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand color-white" href="#">BULL DOG INGLES STUD</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,83 +51,116 @@
         <h1 class="letra unborde rounded border">Dejanos Tu Consulta (que no muerden)</h1>
     </div>
 
-    <form action="donde se va a enviar" method="post" enctype="multipart/form-data"
-        class="centrado unborde rounded border">
-        <div>
-
-            <div class="">
-                <label for="Nombre">Nombre Completo:</label>
-                <input type="text" id="Nombre" name="Nombre" placeholder="Ingresar su Nombre Completo">
-            </div>
-
-            <div class="">
-                <label for="Edad">Edad</label>
-                <input type="number" id="Edad" name="Edad" placeholder="Ingresar su edad">
-            </div>
-
-            <div class="">
-                <label for="Correo">Email</label>
-                <input type="Email" id="Edad" name="Correo" placeholder="Ingresar su correo">
-            </div>
-
-            <div class="">
-                <label for="Clave">Contraseña</label>
-                <input type="password" id="Clave" name="Clave" placeholder="Ingresar su correo">
-            </div>
-
-            <div class="">
-                <label for="Comentario">Comentario</label>
-                <textarea placeholder="ingresar comentario" name="Comentario" id="Comentario" cols="20"
-                    rows="5"></textarea>
-            </div>
-
-            <div class="">
-                <label for="Femenino">Femenino</label>
-                <input type="radio" name="Genero" id="Femenino">
-                <label for="">Masculino</label>
-                <input type="radio" name="Genero" id="Masculino">
-            </div>
-
-            <div class="">
-                <label for="">Aceptar terminos y Condiciones</label>
-                <input type="checkbox" name="Terminos" id="Terminos">
-            </div>
-
-            <div class="">
-                <label for="Pais">Tipo</label>
-                <select name="Pais" id="Pais">
-                    <option value="Argentina">Argentina</option>
-                    <option value="Chile">Chile</option>
-                    <option value="Brasil">Brasil</option>
-
-                </select>
-            </div>
-
-            <input type="submit" value="Enviar">
+    <form class="container__form">
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Nombre" name="nombre" id='nombre' required />
+            <label for="nombre" class="form__label">Nombre</label>
         </div>
-        </form>
 
-        <footer class="d-flex bg-dark flex-wrap justify-content-evenly align-items-center py-3 ">
-            <p class="col-md-4 mb-0 text-muted">© 2022 BULL DOG INGLES STUD</p>
-        
-            <a href="../index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-              <img src="../imagenes/bulldog.png" width="40"/>
-            </a>
-        
-            <ul class="nav col-md-4 justify-content-end">
-              <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
-              <li class="nav-item"><a href="./galeria.html" class="nav-link px-2 text-muted">Galeria</a></li>
-              <li class="nav-item"><a href="./premium.html" class="nav-link px-2 text-muted">Premium</a></li>
-              <li class="nav-item"><a href="./dejanos-tu-consulta.html" class="nav-link px-2 text-muted">Dejanos tu consulta</a></li>
-              <li class="nav-item"><a href="./ayuda.html" class="nav-link px-2 text-muted">Ayuda</a></li>
-            </ul>
-          </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"></script>
-            <div class="whatzap">
-                <a class="" href="https://wa.me/2215035064" target="blank">
-                    <img src="../imagenes/whatsapp.svg" alt="">
-                </a>
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Apellido" name="apellido" id='apellido' required />
+            <label for="apellido" class="form__label">Apellido</label>
+        </div>
+
+        <div class="age-email">
+            <div class="form__group field age">
+                <input type="number" class="form__field" placeholder="Edad" min="14" name="edad" id='edad' required />
+                <label for="edad" class="form__label">Edad</label>
             </div>
+
+            <div class="form__group field email-form">
+                <input type="email" class="form__field" placeholder="Email" name="email" id='email' required />
+                <label for="email" class="form__label">Email</label>
+            </div>
+        </div>
+
+        <div class="form__group field ">
+            <label for="consulta" class="form__label text-area-label">Consulta</label>
+            <textarea type="text" class="form__field text-area" placeholder="Escriba su consulta" name="consulta"
+                id='consulta' required> </textarea>
+        </div>
+
+
+        <div class="form__group field">
+            <label for="pais" class="form__label country-label">Pais</label>
+            <select type="text" class="form__field country-area" placeholder="Escriba su pais" name="pais" id='pais'
+                required>
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+        </div>
+
+        <!-- genre -->
+
+        <div class="generos">
+            <label class="label">
+                <input type="radio" name="radio" checked />
+                <span>Femenino</span>
+            </label>
+            <label class="label">
+                <input type="radio" name="radio" />
+                <span>Masculino</span>
+            </label>
+        </div>
+
+
+        <!-- checkbox -->
+
+        <div class="checkbox__container">
+            <span class="">Aceptar terminos y Condiciones</span>
+            <label class="checkbox__container-animacion">
+                <input type="checkbox" />
+                <svg viewBox="0 0 21 18">
+                    <symbol id="tick-path" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.22003 7.26C5.72003 7.76 7.57 9.7 8.67 11.45C12.2 6.05 15.65 3.5 19.19 1.69"
+                            fill="none" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </symbol>
+                    <defs>
+                        <mask id="tick">
+                            <use class="tick mask" href="#tick-path" />
+                        </mask>
+                    </defs>
+                    <use class="tick" href="#tick-path" stroke="currentColor" />
+                    <path fill="white" mask="url(#tick)"
+                        d="M18 9C18 10.4464 17.9036 11.8929 17.7589 13.1464C17.5179 15.6054 15.6054 17.5179 13.1625 17.7589C11.8929 17.9036 10.4464 18 9 18C7.55357 18 6.10714 17.9036 4.85357 17.7589C2.39464 17.5179 0.498214 15.6054 0.241071 13.1464C0.0964286 11.8929 0 10.4464 0 9C0 7.55357 0.0964286 6.10714 0.241071 4.8375C0.498214 2.39464 2.39464 0.482143 4.85357 0.241071C6.10714 0.0964286 7.55357 0 9 0C10.4464 0 11.8929 0.0964286 13.1625 0.241071C15.6054 0.482143 17.5179 2.39464 17.7589 4.8375C17.9036 6.10714 18 7.55357 18 9Z" />
+                </svg>
+                <svg class="lines" viewBox="0 0 11 11">
+                    <path d="M5.88086 5.89441L9.53504 4.26746" />
+                    <path d="M5.5274 8.78838L9.45391 9.55161" />
+                    <path d="M3.49371 4.22065L5.55387 0.79198" />
+                </svg>
+            </label>
+        </div>
+
+        <!-- submit -->
+
+        <input type="submit" class="btn-submit" value="Enviar">
+    </form>
+
+    <footer class="d-flex bg-dark flex-wrap justify-content-evenly align-items-center py-3 ">
+        <p class="col-md-4 mb-0 text-muted footer-text">© 2022 BULL DOG INGLES STUD</p>
+
+        <a href="../index.html"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="../imagenes/bulldog.png" width="40" />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end footer-links">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+            <li class="nav-item"><a href="./galeria.html" class="nav-link px-2 text-muted">Galeria</a></li>
+            <li class="nav-item"><a href="./premium.html" class="nav-link px-2 text-muted">Premium</a></li>
+            <li class="nav-item"><a href="./dejanos-tu-consulta.html" class="nav-link px-2 text-muted">Dejanos tu
+                    consulta</a></li>
+            <li class="nav-item"><a href="./ayuda.html" class="nav-link px-2 text-muted">Ayuda</a></li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <div class="whatzap">
+        <a class="" href="https://wa.me/2215035064" target="blank">
+            <img src="../imagenes/whatsapp.svg" alt="">
+        </a>
+    </div>
 </body>

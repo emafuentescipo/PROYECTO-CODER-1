@@ -312,5 +312,16 @@ form {
 
 .test {
     background-color: red;
-
 }
+
+@media screen and (max-width: 600px) {
+
+    .footer-text {
+      font-size: 15px;
+    }
+  
+    .footer-links {
+      display: none;
+    }
+  }
+  

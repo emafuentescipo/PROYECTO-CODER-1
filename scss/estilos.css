@@ -352,6 +352,8 @@ footer {
   }
 }
 
+
+
 @media screen and (max-width: 1023px) {
   .grid {
     border: none;
@@ -371,6 +373,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
+  .carmelito_premium_imagen {
+    width: 80%;
+  }
+
   .flex {
     display: none;
   }
