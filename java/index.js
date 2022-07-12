@@ -20,3 +20,32 @@ function cotizadorServicio(){
             }
     }
     cotizadorServicio();
+
+
+class Producto{
+    constructor(nombre, precio){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.vendido = false;
+  }
+  vender(){
+    this.vendido = true;
+  }
+}
+let productos = [];
+
+productos.push(new Producto("serviciobase", 3000));
+productos.push(new Producto("serviciointermedio", 3500));
+productos.push(new Producto("serviciofull", 5000));
+
+for(const item of productos){
+    if(item.nombre === "serviciofull"){
+        item.vender()
+    }
+    
+  }
+
+console.log(productos);
+
+
+
