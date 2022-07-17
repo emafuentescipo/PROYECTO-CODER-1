@@ -22,7 +22,7 @@ function cotizadorServicio(){
     cotizadorServicio();
 
 
-class Producto{
+    class Producto{
     constructor(nombre, precio){
     this.nombre = nombre;
     this.precio = precio;
@@ -47,5 +47,17 @@ for(const item of productos){
 
 console.log(productos);
 
+
+let saludo = document.getElementById("saludos");
+
+let seccion = prompt("Ingresa la seccion deseada");
+
+if(seccion === "premium"){
+  saludo.innerHTML = "<h1>Bienvenido perrunos humanos</h1>";
+}else if(seccion === "ayuda"){
+  saludo.innerHTML = "<h1>Bienvenido a los perrunos humanos interesados</h1>";
+}else{
+  saludo.innerHTML = "<h1>Bienvenido a nuestra tienda</h1>";
+}
 
 
