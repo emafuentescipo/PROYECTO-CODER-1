@@ -60,4 +60,5 @@ if(seccion === "premium"){
   saludo.innerHTML = "<h1>Bienvenido a nuestra tienda</h1>";
 }
 
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
