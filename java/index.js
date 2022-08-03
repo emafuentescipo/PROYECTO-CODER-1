@@ -62,3 +62,7 @@ if(seccion === "premium"){
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+const DateTime = luxon.DateTime;
+const now = DateTime.now();
+console.log(now.setLocale('es').toLocaleString(DateTime.DATE_FULL));
+
