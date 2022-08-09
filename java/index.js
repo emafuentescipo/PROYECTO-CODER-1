@@ -66,3 +66,18 @@ const DateTime = luxon.DateTime;
 const now = DateTime.now();
 console.log(now.setLocale('es').toLocaleString(DateTime.DATE_FULL));
 
+const lista = document.getElementById("listado");
+fetch("./data/data.json")
+.then(response => response.json())
+.then(productos => {
+  productos.forEach(producto => {
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <h4>${producto.nombre}</h4>
+      <p>${producto.precio}</p>
+      <p>Código: ${producto.id}</p>
+      <hr />
+    `;
+    lista.append(li);
+  });
+});
