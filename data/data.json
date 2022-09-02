@@ -1,5 +1,17 @@
 [
-    { "nombre": "Producto Servicio Normal 1", "precio": 1500, "id": 1 },
-    { "nombre": "Producto Servicio Medio 2", "precio": 2500, "id": 2 },
-    { "nombre": "Producto Servicio Full 3", "precio": 3500, "id": 3 }
-  ]
+  {
+    "nombre": "Producto Servicio Normal 1",
+    "precio": 1500,
+    "id": 1
+  },
+  {
+    "nombre": "Producto Servicio Medio 2",
+    "precio": 2500,
+    "id": 2
+  },
+  {
+    "nombre": "Producto Servicio Full 3",
+    "precio": 3500,
+    "id": 3
+  }
+]
